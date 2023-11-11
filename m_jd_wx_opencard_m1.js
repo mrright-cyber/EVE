@@ -1,6 +1,6 @@
 let mode = __dirname.includes('magic')
 const {Env, cheerio} = mode ? require('../magic') : require('./magic')
-const $ = new Env('M通用开卡');
+const $ = new Env('M通用开卡1');
 $.activityUrl = decodeURIComponent(process.argv.splice(2)?.[0] || process.env.M_WX_OPENCARD_M_URL1)
 if (mode) {
     $.activityUrl = 'https://lzdz1-isv.isvjcloud.com/m/1000006644/dz288f6a084de7ba829963a36bc4ff'
