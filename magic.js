@@ -5,7 +5,7 @@ let testMode = process.env.M_TEST_MODE?.includes('on') ? true : mode
 //是否启用代理 1关闭2开启
 let wxProxyEnable = parseInt(process.env.M_WX_PROXY_ENABLE || "2");
 //代理地址
-let wxProxyUrl = process.env.M_WX_PROXY_URL || "";
+let wxProxyUrl = process.env.S_WX_PROXY_URL || "";
 //智能切换?1:2 1：先本地ip，493不可用再切换代理, 2:直接使用代理访问
 let wxProxySmart = parseInt(process.env.M_WX_PROXY_SMART || "2");
 // 默认2分钟获取一个新ip
